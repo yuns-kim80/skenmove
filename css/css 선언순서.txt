@@ -1,0 +1,15 @@
+* css 선언순서
+1. display - 표시
+   - flex, grid 관련 속성
+2. visibility, overflow(넘침)
+3. float -흐름
+4. position -위치
+   - left, top, ..., z-index(정렬)
+5. [box model]
+   - width, height, margin, padding, border
+   - box-sizing
+6. background
+7. font
+8. animation
+9. transform
+10. atc
