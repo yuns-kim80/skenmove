@@ -26,17 +26,17 @@ $('header .btn_search_close').click(function() {
 })
 
 /* allmenu */
-const menu = document.querySelector('.allmenu_wrap_open')
-menu.addEventListener('click', function() {
-  if(menu.classList.contains('open')) {
-    menu.classList.remove('open');
+const menuO = document.querySelector('.allmenu_wrap_open')
+menuO.addEventListener('click', function() {
+  if(menuO.classList.contains('open')) {
+    menuO.classList.remove('open');
   } else {
-    menu.classList.add('open');
+    menuO.classList.add('open');
   }
 });
 
 $('.allmenu_wrap_open').click(function() {
-  $('.allmenu_popup').css({'display':'flex'});
+  $('header .allmenu_popup').css({'display':'flex'});
   // $('html, body').css({'overflow':'hidden'})
 })
 
