@@ -225,7 +225,6 @@ header .uitl .zic {
   background: url(../img/sk_zic_logo_black.svg) no-repeat center;
   background-size: contain;
 }
-
 header .uitl .youtube:hover {
   background: url(../img/youtube_logo_green.svg) no-repeat center;
   background-size: contain;
@@ -233,10 +232,8 @@ header .uitl .youtube:hover {
 header .uitl .yubase:hover {background: url(../img/sk_yubase_logo_green.svg) no-repeat center;background-size: contain;}
 header .uitl .zic:hover {background: url(../img/sk_zic_logo_green.svg ) no-repeat center;background-size: contain;}
 
-
-
+/* header uitl_right */
 header .uitl .uitl_all .uitl_right {
-  /* position: relative; */
   display: flex;align-items: center;gap: 30px;
 }
 header .uitl .uitl_all .uitl_right .search_wrap .btn_search_open {
@@ -248,14 +245,12 @@ header .uitl .uitl_all .uitl_right .search_wrap .btn_search_open:hover {
   background: url(../img/search_logo-green.svg);
 }
 header .uitl .uitl_all .uitl_right .search_wrap {
-  /* position: relative; */
 }
 header .uitl .uitl_all .uitl_right .search_wrap .search_popup {
   display: none;position: absolute;
   left: 0;right: 0;top: 102px;
   padding: 200px 0 200px;
   background: #fafafa;
-  /* border: 1px solid #000; */
 }
 header .search_wrap .search_popup .search_input {
   display: flex;justify-content: space-between;align-items: center;
@@ -300,7 +295,6 @@ header .uitl .uitl_all .uitl_right .sns_link>li {
 header .uitl .uitl_all .uitl_right .lang_wrap {position: relative;}
 header .uitl .uitl_all .uitl_right .lang_wrap .eng_lang {}
 header .uitl .uitl_all .uitl_right .lang_wrap .eng_lang button {
-  /* position: absolute;left: 0;top: 0; */
   display: block;width: 28px;height: 28px;
   background: url(../img/globe_icon_black.svg) no-repeat center;
   background-size: contain;
@@ -402,8 +396,6 @@ header .allmenu_wrap_open.open .line:nth-child(2) {
 header .allmenu_wrap_open.open .line:nth-child(3) {
   transform: rotate(-45deg) translateX(10%);
 }
-
-
 
 header .allmenu_wrap_close {
   display: flex;flex-direction: column;

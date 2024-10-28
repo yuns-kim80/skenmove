@@ -58,7 +58,7 @@ const swiper_f = new Swiper('.main_visual_f_swiper', {
   },
 });
 
-/* gotop button */ 
+/* gotop button */
 $(window).scroll(function() {
   // top button controll
   if ($(this).scrollTop() > 1500) {
@@ -72,7 +72,7 @@ $(".btn_gotop").click(function() {
   $('html, body').animate({scrollTop:0}, '500');
 });
 
-/* family_site popup */ 
+/* family_site popup */
 $('.family_site .ri-add-line').click(function() {
   $('.f_s_popup').css('display', 'flex')
 });
