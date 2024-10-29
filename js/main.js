@@ -1,3 +1,4 @@
+// main.js
 
 /* header  */
 $('header #gnb').hover(function() {
@@ -26,25 +27,38 @@ $('header .btn_search_close').click(function() {
 })
 
 /* allmenu */
-const menuO = document.querySelector('.allmenu_wrap_open')
-menuO.addEventListener('click', function() {
-  if(menuO.classList.contains('open')) {
-    menuO.classList.remove('open');
+
+const menuButton = $('.allmenu_wrap_open');
+const allmenuPopup = $('.allmenu_popup');
+
+menuButton.on('click', function() {
+  $(this).toggleClass('open'); // 'open' 클래스 토글
+  if ($(this).hasClass('open')) {
+    allmenuPopup.css('display', 'flex'); // 팝업 보이기
   } else {
-    menuO.classList.add('open');
+    allmenuPopup.css('display', 'none'); // 팝업 숨기기
   }
 });
 
-$('.allmenu_wrap_open').click(function() {
-  $('header .allmenu_popup').css({'display':'flex'});
-  // $('html, body').css({'overflow':'hidden'})
-})
+allmenuPopup.on('click', function(event) {
+  // 팝업 외부 클릭 시 닫기
+  if (event.target === this) {
+    menuButton.removeClass('open'); // 햄버거 버튼 원래 상태로
+    allmenuPopup.css('display', 'none'); // 팝업 숨기기
+  }
+});
 
-$('.allmenu_wrap_close').click(function() {
-  $('.allmenu_popup').hide();
-  // $('html, body').css({'overflow':'auto'})
-})
+// $('.allmenu_wrap_open').click(function() {
+//   $('header .allmenu_popup').css('display', 'flex');
+//   // $('html, body').css('overflow','hidden')
+// })
 
+// $('.allmenu_wrap_open').click(function() {
+//   $('.allmenu_popup').css('display','none');
+// //   // $('html, body').css('overflow','auto')
+// })
+
+/* main_visual swiper */
 const swiper_f = new Swiper('.main_visual_f_swiper', {
   // Optional parameters
   loop: true,
