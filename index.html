@@ -4,23 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>skenmove</title>
+
   <!-- CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.min.css">
   <link rel="stylesheet" href="css/reset.css">
   <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/static/woff2/SUIT.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <link rel="stylesheet" href="css/main.css">
+
   <!-- JS -->
   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.min.js" integrity="sha256-sw0iNNXmOJbQhYFuC9OF2kOlD5KQKe1y5lfBn4C9Sjg=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script defer src="js/main.js">
-    // js를 internal(내부 문서) 방식으로 사용할 때는 script 태그에 속성없이바로 작성
-    // external(외부 문서)방식으로 사용할 때는 script 태그에 src 속성을 이용하고 태그 내부에는 아무것도 작성하지 않음
-    //*** script 태그 하나에 src 속성과 태그 내부에 js 문법을 둘 다 사용하면 둘 다 동작하지 않음
-  </script>
-
-
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script defer src="js/main.js"></script>
 
 </head>
 <body>
@@ -148,18 +146,13 @@
               <span class="line"></span>
             </button>
             <div class="allmenu_popup">
-              <button class="allmenu_wrap_close">
-                <span class="line"></span>
-                <span class="line"></span>
-                <span class="line"></span>
-              </button>
               <div class="popup_content">
                 <div class="logo_line"><a href="#"></a></div>
                 <div class="allmenu_gnb">
                   <ul class="dep1">
                     <li><a href="#">Company</a>
                       <ul class="dep2">
-                        <li><a href="#">회사소개</a>
+                        <li><a href="#">회사소개<i class="ri-arrow-right-line"></i></a>
                           <ul class="dep3">
                             <li><a href="#">Our Mission</a></li>
                             <li><a href="#">경영철학(SKMS)</a></li>
@@ -167,12 +160,12 @@
                             <li><a href="#">제품/서비스 안전</a></li>
                           </ul>
                         </li>
-                        <li><a href="#">CEO</a>
+                        <li><a href="#">CEO<i class="ri-arrow-right-line"></i></a>
                           <ul class="dep3">
                             <li><a href="#">CEO 인사말</a></li>
                           </ul>
                         </li>
-                        <li><a href="#">글로벌 네트워크</a>
+                        <li><a href="#">글로벌 네트워크<i class="ri-arrow-right-line"></i></a>
                           <ul class="dep3">
                             <li><a href="#">국내</a></li>
                             <li><a href="#">해외</a>
@@ -184,9 +177,9 @@
                             </li>
                           </ul>
                         </li>
-                        <li><a href="#">미디어센터</a>
+                        <li><a href="#">미디어센터<i class="ri-arrow-right-line"></i></a>
                           <ul class="dep3">
-                            <li><a href="#">SKinno News</a></li>
+                            <li><a href="#">SKinno News<i class="ri-share-box-line"></i></a></li>
                             <li><a href="#">광고 갤러리</a>
                             <li><a href="#">CI</a>
                               <ul class="dep4">
@@ -206,13 +199,13 @@
                     </li>
                     <li><a href="#">Sustaninability</a>
                       <ul class="dep2">
-                        <li><a href="#">Green Innovation</a>
+                        <li><a href="#">Green Innovation<i class="ri-arrow-right-line"></i></a>
                           <ul class="dep3">
                             <li><a href="#">그린 포트폴리오 확대</a></li>
                             <li><a href="#">사회적 가치(SV) 창출 환경 제품 및 서비스 확대</a></li>
                           </ul>
                         </li>
-                        <li><a href="#">Road to Net Zero</a>
+                        <li><a href="#">Road to Net Zero<i class="ri-arrow-right-line"></i></a>
                             <ul class="dep3">
                             <li><a href="#">Scope 1 & 2 배출량 감축
                             </a></li>
@@ -221,7 +214,7 @@
                             <li><a href="#">저탄소 R&D 투자</a></li>
                           </ul>
                         </li>
-                        <li><a href="#">Outstanding SHE Mgmt.</a>
+                        <li><a href="#">Outstanding SHE Mgmt.<i class="ri-arrow-right-line"></i></a>
                           <ul class="dep3">
                             <li><a href="#">사업장 폐기물 재활용
                             </a></li>
@@ -230,66 +223,67 @@
                             <li><a href="#">구성원 건강 제고</a></li>
                           </ul>
                         </li>
-                        <li><a href="#">Winning the Trust</a>
+                        <li><a href="#">Winning the Trust<i class="ri-arrow-right-line"></i></a>
                           <ul class="dep3">
                             <li><a href="#">반부패 Risk Zero 화</a></li>
                             <li><a href="#">정보 보안 리스크 관리 강화</a></li>
                           </ul>
                         </li>
-                        <li><a href="#">Together with Society</a>
+                        <li><a href="#">Together with Society<i class="ri-arrow-right-line"></i></a>
                           <ul class="dep3">
                             <li><a href="#"></a></li>
                             <li><a href="#"></a>
                               <ul class="dep4">
-                                <li><a href="#"></a></li>
-                                <li><a href="#"></a></li>
-                                <li><a href="#"></a></li>
-                                <li><a href="#"></a></li>
-                                <li><a href="#"></a></li>
+                                <li><a href="#">- 핵심 과제</a></li>
+                                <li><a href="#">- 추진 체계</a></li>
+                                <li><a href="#">- 사회적기업 생태계 조성</a></li>
+                                <li><a href="#">- 지속 가능한 환경</a></li>
+                                <li><a href="#">- 지역사회 상생</a></li>
                               </ul>
                             </li>
-                            <li><a href="#"></a></li>
+                            <li><a href="#">그린 생태계 파트너십 강화</a></li>
                           </ul>
                         </li>
-                        <li><a href="#">Happiness for All</a>
+                        <li><a href="#">Happiness for All<i class="ri-arrow-right-line"></i></a>
                           <ul class="dep3">
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
+                            <li><a href="#">구성원 행복 극대화</a></li>
+                            <li><a href="#">인권 보호</a></li>
+                            <li><a href="#">다양성 및 포용성 강화</a></li>
                           </ul>
                         </li>
-                        <li><a href="#">리포팅 센터</a>
+                        <li><a href="#">리포팅 센터<i class="ri-arrow-right-line"></i></a>
                           <ul class="dep3">
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a>
+                            <li><a href="#">ESG Report</a></li>
+                            <li><a href="#">Net Zero Special Report</a></li>
+                            <li><a href="#">인권경영보고서</a></li>
+                            <li><a href="#">정책 및 가이드라인</a>
+                            <li><a href="#">ESG Initiative</a>
                               <ul class="dep4">
-                                <li><a href="#"></a></li>
-                                <li><a href="#"></a></li>
+                                <li><a href="#">Initiatives</a></li>
+                                <li><a href="#">ESG 대외평가</a></li>
                               </ul>
                             </li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
+                            <li><a href="#">중대성 평가</a></li>
+                            <li><a href="#">ESG Data Platform<i class="ri-share-box-line"></i></a></li>
                           </ul>
                         </li>
                       </ul>
                     </li>
                     <li><a href="#">Business</a>
                       <ul class="dep2">
-                      <li><a href="#">Base Oil</a></li>
-                      <li><a href="#">Lubricants</a></li>
-                      <li><a href="#">e-Fluids</a></li>
-                      <li><a href="#">Thermal <br>Management</a></li>
+                      <li><a href="#">Base Oil<i class="ri-arrow-right-line"></i></a></li>
+                      <li><a href="#">Lubricants<i class="ri-arrow-right-line"></i></a></li>
+                      <li><a href="#">e-Fluids<i class="ri-arrow-right-line"></i></a></li>
+                      <li><a href="#">Thermal Management<i class="ri-arrow-right-line"></i></a></li>
                       </ul>
                     </li>
                     <li><a href="#">Career</a>
                       <ul class="dep2">
-                        <li><a href="#">기업문화</a></li>
-                        <li><a href="#">인사제도</a>
+                        <li><a href="#">기업문화<i class="ri-arrow-right-line"></i></a></li>
+                        <li><a href="#">인사제도<i class="ri-arrow-right-line"></i></a>
                           <ul class="dep3">
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
+                            <li><a href="#">인재육성</a></li>
+                            <li><a href="#">평가/보상</a></li>
                           </ul>
                         </li>
                         <li><a href="#">채용정보<i class="ri-share-box-line"></i></a></li>
@@ -327,35 +321,38 @@
   </header>
   <main>
     <div class="main_visual_f_swiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide slide1">
-            <p>Energy Saving Company</p>
-            <p class="main_text">We Save Energy <br><strong>and Move Forward</strong></p>
-          </div>
-          <div class="swiper-slide slide2">
-            <p>Energy Saving Company</p>
-            <p class="main_text">Beautiful Balance between<br><strong>Present and Future</strong></p>
-          </div>
-          <div class="swiper-slide slide3">
-            <p>Energy Saving Company</p>
-            <p class="main_text">Create Happy Future<br><strong>with Global Friends</strong></p>
-          </div>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide slide1">
+          <p>Energy Saving Company</p>
+          <p class="main_text">We Save Energy <br><strong>and Move Forward</strong></p>
         </div>
-        <div class="swiper_content">
-          <span>Read more
-            <p></p>
+        <div class="swiper-slide slide2">
+          <p>Energy Saving Company</p>
+          <p class="main_text">Beautiful Balance between<br><strong>Present and Future</strong></p>
+        </div>
+        <div class="swiper-slide slide3">
+          <p>Energy Saving Company</p>
+          <p class="main_text">Create Happy Future<br><strong>with Global Friends</strong></p>
+        </div>
+      </div>
+      <div class="swiper_content">
+        <div class="read_more">
+          <span>Read more</span>
+          <div>
+            <p class="stretch"></p>
             <p class="rotate"></p>
-          </span>
-          <div class="btm_mouse">
-            <span class="main_mouse_wheel"></span>
-            <span class="main_mouse"></span>
           </div>
-          <div class="btm_arrow">
-            <span class="main_box"></span>
-            <span class="main_box"></span>
-          </div>
-          <div class="swiper-pagination"></div>
         </div>
+        <div class="btm_mouse">
+          <span class="main_mouse_wheel"></span>
+          <span class="main_mouse"></span>
+        </div>
+        <div class="btm_arrow">
+          <span class="main_box"></span>
+          <span class="main_box"></span>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
     </div>
     <div class="main_visual_l_swiper">
       <div class="swiper-wrapper">

@@ -27,6 +27,16 @@ $('header .btn_search_close').click(function() {
 })
 
 /* allmenu */
+// $('.btn_allmenu_open').click(function() {
+//   $('.allmenu_popup').css({'display':'flex'});
+//   $('html, body').css({'overflow':'hidden'});
+//   $('header .search_popup').hide()
+// })
+// $('.btn_allmenu_close').click(function() {
+//   $('.allmenu_popup').hide();
+//   $('html, body').css({'overflow':'auto'});
+//   $('header').removeClass('on')
+// })
 
 const menuButton = $('.allmenu_wrap_open');
 const allmenuPopup = $('.allmenu_popup');
@@ -35,6 +45,7 @@ menuButton.on('click', function() {
   $(this).toggleClass('open'); // 'open' 클래스 토글
   if ($(this).hasClass('open')) {
     allmenuPopup.css('display', 'flex'); // 팝업 보이기
+    // menuButton.css('display', 'flex'); // 팝업 보이기
   } else {
     allmenuPopup.css('display', 'none'); // 팝업 숨기기
   }
@@ -74,13 +85,22 @@ const swiper_f = new Swiper('.main_visual_f_swiper', {
 
 /* gotop button */
 $(window).scroll(function() {
-  // top button controll
   if ($(this).scrollTop() > 1500) {
     $('.btn_gotop').fadeIn();
   } else {
     $('.btn_gotop').fadeOut();
   }
 });
+$(window).scroll(function() {
+  let scrollTop = $(this).scrollTop();
+  const btnGotop = $('.btn_gotop');
+
+  if (scrollTop > 2950) {
+    btnGotop.css('bottom', '260px')
+  } else {
+    btnGotop.css('bottom', '46px')
+  }
+})
 
 $(".btn_gotop").click(function() {
   $('html, body').animate({scrollTop:0}, '500');

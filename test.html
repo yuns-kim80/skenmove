@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slick Slider Example</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <style>
+    .slider {
+      width: 100%;
+      margin: auto;
+    }
+    .slide {
+      width: 100%;
+      height: 100vh;
+      background: #ccc;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+    }
+    .slide span {
+      margin: auto;
+      display: flex;justify-content: center;align-items: center;
+      font-size: 3rem;color: #ccc;font-weight: 800;
+      text-align: center;
+      animation: slideIn 0.5s forwards; /* 애니메이션 적용 */
+    }
+    .item1 {background-image: url(./img/1.avif);}
+    .item2 {background-image: url(./img/2.avif);}
+    .item3 {background-image: url(./img/3.avif);}
+    .item4 {background-image: url(./img/2.avif);}
+    @keyframes slideIn {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+    @keyframes zoomIn {
+      from {scale: (1);}
+      to {scale: (1.1);}
+    }
+  </style>
+</head>
+<body>
+  <div class="slider">
+    <div class="slide item1"><span>슬라이드 1</span></div>
+    <div class="slide item2"><span>슬라이드 2</span></div>
+    <div class="slide item3"><span>슬라이드 3</span></div>
+    <div class="slide item4"><span>슬라이드 4</span></div>
+</div>
+
+
+<script>
+  $(document).ready(function(){
+    $('.slider').slick({
+      dots: true,          // 점 표시
+      infinite: true,      // 무한 스크롤
+      speed: 500,          // 전환 속도
+      slidesToShow: 1,     // 한 번에 보여줄 슬라이드 수
+      slidesToScroll: 1,    // 한 번에 스크롤할 슬라이드 수
+      autoplay: true,
+      cssEase: 'linear',
+    });
+  });
+</script>
+</body>
+</html>
